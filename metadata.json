@@ -1,0 +1,5 @@
+
+{
+  "name": "Monitoramento de Agentes - Anhanguera",
+  "description": "Sistema neubrutalista para monitoramento em tempo real de agentes via webhooks, permitindo o acompanhamento de conexão, status e bases ativas."
+}

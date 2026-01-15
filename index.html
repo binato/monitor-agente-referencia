@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Agentes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ed7d44",
+                        "background-light": "#ffffff",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                    },
+                    borderWidth: {
+                        '3': '3px',
+                    },
+                    boxShadow: {
+                        'brutal': '6px 6px 0px 0px rgba(0,0,0,1)',
+                        'brutal-sm': '4px 4px 0px 0px rgba(0,0,0,1)',
+                        'brutal-hover': '2px 2px 0px 0px rgba(0,0,0,1)',
+                        'brutal-dark': '6px 6px 0px 0px rgba(255,255,255,0.2)',
+                    }
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-display bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-200;
+            }
+        }
+        .brutal-border {
+            border: 3px solid black;
+        }
+        .dark .brutal-border {
+            border: 3px solid white;
+        }
+        .brutal-shadow {
+            box-shadow: 6px 6px 0px 0px black;
+        }
+        .dark .brutal-shadow {
+            box-shadow: 6px 6px 0px 0px rgba(255,255,255,0.3);
+        }
+        .brutal-input {
+            border: 3px solid black;
+            box-shadow: 3px 3px 0px 0px black;
+            transition: all 0.1s ease;
+        }
+        .dark .brutal-input {
+            border: 3px solid white;
+            box-shadow: 3px 3px 0px 0px rgba(255,255,255,0.2);
+            background: #1e1e1e;
+            color: white;
+        }
+        .brutal-input:focus {
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0px 0px black;
+            outline: none;
+        }
+        .dark .brutal-input:focus {
+            box-shadow: 1px 1px 0px 0px white;
+        }
+        .btn-brutal {
+            border: 3px solid black;
+            box-shadow: 4px 4px 0px 0px black;
+            transition: all 0.1s ease;
+        }
+        .dark .btn-brutal {
+            border: 3px solid white;
+            box-shadow: 4px 4px 0px 0px rgba(255,255,255,0.3);
+        }
+        .btn-brutal:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px black;
+        }
+        .dark .btn-brutal:active {
+            box-shadow: 0px 0px 0px 0px white;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
