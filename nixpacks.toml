@@ -1,0 +1,13 @@
+# Nixpacks Configuration for EasyPanel
+
+[phases.setup]
+nixPkgs = ["nodejs"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[phases.start]
+procfile = "npm run start"
